@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".breath.BreathActivity">
+
+    <!--    Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+
+        <ImageView
+            android:id="@+id/donate"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/donation"
+            android:contentDescription="@string/back"
+            tools:ignore="ImageContrastCheck" />
+
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:contentDescription="@string/back"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/breath_before_read"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+
+
+    </RelativeLayout>
+
+    <!-- Background. -->
+    <ImageView
+        android:contentDescription="@string/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <!-- Opacity. -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackOpacity" />
+
+    <!-- Configuration. -->
+    <RelativeLayout
+        android:id="@+id/layout_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/breath"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--            android:textAppearance="@style/Headline"/>-->
+
+
+        <!--        android:layout_alignParentBottom="true"-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_sound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/sound"
+                android:src="@drawable/ic_volume_up_white_24dp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_minutes"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/spinner_"
+                android:popupBackground="@android:color/transparent"
+                tools:ignore="TouchTargetSizeCheck" />
+            <!--                style="@style/SpinnerStyle"/>-->
+
+
+            <ImageView
+                android:id="@+id/image_vibrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/vibrate"
+                android:src="@drawable/ic_vibration_white_24dp" />
+        </LinearLayout>
+
+
+
+
+        <!-- Privacy policy. -->
+
+    </RelativeLayout>
+
+    <!-- Breathing circle. -->
+    <View
+        android:id="@+id/view_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"/>
+
+    <!--        Inhale Exhale-->
+    <TextView
+        android:id="@+id/inhaleExhaleTv"
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="@string/inhale"
+        android:textAlignment="center"
+        android:textColor="@color/whiteOpacity" />
+
+</RelativeLayout>

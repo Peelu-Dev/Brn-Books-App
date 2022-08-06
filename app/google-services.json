@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497675195551",
+    "project_id": "brn-books-app",
+    "storage_bucket": "brn-books-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497675195551:android:5d5c1bfdfc768464517eaa",
+        "android_client_info": {
+          "package_name": "com.books.brnbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497675195551-8gma43t7pphef2lvv1h2uco9hppfri2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAccRtlrMlynwsND5qNEwZxeopcU5dcb3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497675195551-8gma43t7pphef2lvv1h2uco9hppfri2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

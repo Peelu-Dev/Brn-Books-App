@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".books.screens.DonateActivity">
+
+        <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+
+                <ImageButton
+                    android:contentDescription="@string/__back"
+                    android:id="@+id/nib_back"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:backgroundTint="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_back_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_brn_books"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:text="@string/support_brn_books_app"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="250dp"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/yellow"
+                    android:text="@string/nyour_little_bit_of_contribution_n_can_give_millions_and_billions_of_users_an_ads_free_experience"/>
+        </RelativeLayout>
+
+
+<!--        <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="280dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:text="OR"-->
+<!--            android:textColor="@color/purple_500"-->
+<!--            android:textSize="30sp" />-->
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/coffee"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/buymeacoffee"
+            android:contentDescription="@string/coffee" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="460dp"
+                    android:text="@string/support_brn_books_with_upi_debit_cards"
+                    android:contentDescription="@string/whatsapp"
+                    android:drawableEnd="@drawable/whatsapp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="530dp"
+                    android:text="@string/support_brn_books_with_upi_debit_cards_"
+                    android:contentDescription="@string/email__"
+                    android:drawableEnd="@drawable/ic_baseline_email_gray"/>
+        </RelativeLayout>
+
+
+
+
+
+
+<!--        <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/donateBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="220dp"-->
+<!--                    android:backgroundTint="@color/yellow"-->
+<!--                    android:text="Donate Now" />-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/descriptionTil"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:hintEnabled="false">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/descriptionET"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="100dp"-->
+<!--                            android:background="@drawable/shape_edittext01"-->
+<!--                            android:drawablePadding="10dp"-->
+<!--                            android:hint="Description"-->
+<!--                            android:importantForAutofill="no"-->
+<!--                            android:inputType="textMultiLine"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textColorHint="@color/gray01"-->
+<!--                            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/amountTil"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:hintEnabled="false">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/amountET"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="150dp"-->
+<!--                            android:background="@drawable/shape_edittext01"-->
+<!--                            android:drawablePadding="10dp"-->
+<!--                            android:hint="Amount"-->
+<!--                            android:importantForAutofill="no"-->
+<!--                            android:inputType="numberDecimal"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textColorHint="@color/gray01"-->
+<!--                            tools:ignore="TouchTargetSizeCheck" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="150dp"-->
+<!--                    android:background="@drawable/donatenow"-->
+<!--                    android:backgroundTint="@color/yellow"-->
+<!--                    android:contentDescription="@string/donate" />-->
+
+
+<!--        </RelativeLayout>-->
+
+
+</RelativeLayout>
+

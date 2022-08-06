@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.books.brnbooks">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".books.main.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BRNBooks"
+        tools:targetApi="31">
+        <activity
+            android:name=".notes.activity.DetailNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.activity.PdfDetailActivity"
+            android:exported="false" />
+        <activity android:name=".books.activity.PdfAddActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".notes.activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notes.activity.EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notes.activity.MainActivity2"
+            android:exported="false" />
+
+            <activity android:name=".books.screens.DonateActivity"
+                android:exported="false"/>
+        <activity
+            android:name=".breath.BreathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.activity.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfListAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.activity.PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.main.DashboardAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.main.DashboardUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".books.screens.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
